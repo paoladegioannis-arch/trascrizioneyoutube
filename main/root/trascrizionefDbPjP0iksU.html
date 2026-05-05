@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trascrizione Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .player-container {
+      position: sticky;
+      top: 0;
+      background: #f9f9f9;
+      padding-bottom: 15px;
+      z-index: 10;
+    }
+    #player {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .chapter {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid #eee;
+    }
+    .chapter:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .timestamp {
+      color: #ff0000;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .text {
+      margin-top: 10px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .yt-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+      text-decoration: none;
+    }
+    .yt-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<h1>Trascrizione Video</h1>
+<div class="player-container">
+  <div id="player"></div>
+</div>
+
+    <div class="chapter" onclick="playAt(59)">
+      <div class="title">
+        <span class="timestamp">00:00:59</span> INTRODUZIONE E SALUTO
+      </div>
+      <div class="text">เฮ [musica] [musica] [musica] [musica] [musica] [musica] Ciao, benvenuti a tutti, a tutte.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=59s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(113)">
+      <div class="title">
+        <span class="timestamp">00:01:53</span> PRESENTAZIONE E OBIETTIVI
+      </div>
+      <div class="text">Buonasera e sono Riccardo Figliozz, mi presento di data, sono 200 appunto di Data Masters. Per chi fosse per la prima volta qui appunto nel nostro canale a seguire una nostra live e spiego brevemente appunto cosa facciamo. e ci occupiamo di eh formazione per quanto riguarda appunto AI, ma non solo, anche data science, machine learning, data analysis e in generale facciamo appunto diverse live per quanto riguarda eh tutte le novità del momento, come ad esempio quella di oggi che ci teniamo a farvi vedere perché è passato un po' in sordina riguardo appunto tutto il discorso di Gemini Wspace Studio e quindi appunto andiamo a vedere oggi questa sera come utilizzare alcune delle funzionalità di WSP Studio all'interno magari di alcuni flussi di lavoro, giusto per automatizzarli e capire come utilizzarlo e quando utilizzarlo rispetto anche ad altri strumenti ovviamente.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=113s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(185)">
+      <div class="title">
+        <span class="timestamp">00:03:05</span> INTERAZIONE E PARTECIPAZIONE ATTIVA
+      </div>
+      <div class="text">E in questo caso potete [schiarire la voce] anche, anzi vi invito a scrivere i commenti vari in chat, quindi se avete delle domande e anche qua possiamo appunto discuterne e rispondere riguardo a eventuali flussi che vi piacerebbe automatizzare, degli strumenti anche comparando appunto lo strumento di Google con altri strumenti di automazione e però appunto magari sicuramente vi verranno in mente una volta che andremo a vedere i vari i vari casi di studio.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=185s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(231)">
+      <div class="title">
+        <span class="timestamp">00:03:51</span> MOSTRA FLUSSI E PERSONALIZZAZIONI
+      </div>
+      <div class="text">Nel frattempo vi sposto nell'altro schermo, così condivido appunto la pagina di Wordspace Studio. Qui vedete che in realtà eh andiamo qua stiamo vedendo i flussi che ho già creato, però la pagina originale che trovate poi in appunto in questo a questo indirizzo workspacegoogle.com in realtà eh fa vedere appunto l'utilizzo di Gemini per creare dei flussi di automazione. Si possono anche gestire, eh spostare, insomma, si possono personalizzare come si vuole. Qua ovviamente poi ci sono anche vari template che si possono già utilizzare e anche questi modificare oppure lasciarli così come si vuole. Possono essere descritti attraverso Gemini. Quindi io gli scrivo, guarda, voglio automatizzare la reportistica di un determinato foglio Google Sheet e lui automaticamente vi crea tutti i vari step. Sono i template, appunto, diciamo, quelli standard che ci si potrebbe aspettare da eh le classiche funzioni di Google. Quindi, ad esempio, dammi eh un riassunto del appunto delle email che non ho letto, fammi una notifica eh di una mail specifica, fammi appunto la classificazione delle delle in base al contenuto, insomma robe di questo tipo.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=231s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(306)">
+      <div class="title">
+        <span class="timestamp">00:05:06</span> ACCESSO E FUNZIONALITÀ
+      </div>
+      <div class="text">Works Studio in realtà è attualmente ovviamente in diciamo può essere utilizzato per chi ha un abbonamento appunto a Google Wordspace, eh quindi potere già accedere ovviamente in quel caso se non ce l'avete cioè comunque mi sembra e avevo già visto che ci sono appunto dei trial se non sbaglio di 14 giorni proprio per Google WordPress, quindi se fate già il trial potete anche provare le funzioni che andremo a vedere oggi.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=306s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(345)">
+      <div class="title">
+        <span class="timestamp">00:05:45</span> DETTAGLI FLUSSO NEWSLETTER
+      </div>
+      <div class="text">Va bene, quindi bando alle ciance, andiamo subito al sodo. Io vi faccio vedere direttamente, appunto, un primo flusso giusto per farvi ehm farvi orientare un po' anche nella configurazione di questi flussi. Andiamo a vedere un flusso molto molto semplice che è appunto quello di una creazione, di una newsletter e che mi arriva giornalmente o comunque a in maniera programmata all'interno di può essere della mia mail, in questo caso io sto utilizzando Google Chat e poi altre due funzioni, altri due flussi, quindi uno che mi automatizza la reportistica di un determinato Google Sheet e un altro che invece riguarda più una una funzione non un'automazione char.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=345s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(365)">
+      <div class="title">
+        <span class="timestamp">00:06:05</span> UTILIZZO GEMINI NELLE AUTOMAZIONI
+      </div>
+      <div class="text">utilizzo appunto Gemini per farmi, cioè per classificare quella quell'annuncio, comunque quel candidato eh come target oppure no. e se è target puoi salvarlo, fare un riepilogo, altre altre cose che vedremo. Quindi andiamo a vedere innanzitutto questo dailyayi newsletter che in realtà è poi quello che è uno dei template che si può utilizzare.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=365s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(423)">
+      <div class="title">
+        <span class="timestamp">00:07:03</span> TRIGGER E AVVIO AUTOMAZIONI
+      </div>
+      <div class="text">E qua comunque potete vedere che ci sono anche qui dei trigger chiamati appunto starter che vengono utilizzati per appunto schedulare ad esempio e in questo caso il flusso si può decidere appunto eh ogni quanto, quindi posso dire guarda ogni lunedì oppure ogni settimana alle 8:00 insomma lo posso decidere io. e poi anche decidere quando finire appunto quando stoppare questo flusso qui perché ovviamente eh la cosa comoda è che ovviamente possiamo testarlo prima, poi fare appunto turnarlo e veramente quello appunto sarà messo in in produzione, chiamiamolo così, appunto, in modo tale che poi ogni volta verrà avviato eh al trigger, all'evento che viene che fa scattare, appunto, il flusso.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=423s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(459)">
+      <div class="title">
+        <span class="timestamp">00:07:39</span> CONFIGURAZIONE E UTILIZZO NODI
+      </div>
+      <div class="text">Dopo questo, appunto, dopo il trigger che si può utilizzare, andremo a vedere come eh utilizzare anche Gemini. In questo caso, ad esempio, eh possiamo utilizzare questo, chiamiamolo nodo, perché mi viene da dire nodo, eh chiamando richiamando un po' quello che è l'utilizzo di N8N. Eh però, appunto, magari sono delle action degli step. possiamo chiamarli anche così. ovviamente eh siccome era predefinito ehm quello predefinito in inglese, possiamo utilizzarlo anche in italiano, quindi in realtà possiamo anche fare una, diciamo, dirgli appunto o direttamente fai fai la ricerca in inglese e poi e traduci in italiane oppure mettere i propri bron in italiano, cambia poco abbastanza.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=459s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(540)">
+      <div class="title">
+        <span class="timestamp">00:09:00</span> GESTIONE RISORSE E INTEGRAZIONI
+      </div>
+      <div class="text">possiamo comunque settare anche le risorse, diciamo, che eh Gemini può utilizzare come integrazione di Wordspace. Quindi non soltanto ovviamente la web research e in questo caso ovviamente la la dobbiamo abilitare e riguardo al alla ricerca appunto delle notizie, ma se vogliamo possiamo anche abilitare tutto quello che concerne Wordspace, quindi Google Drive, Google Sheets, eh Slides e tutto quello che concerne il mondo di Google Wordspace. Possiamo sceglierlo o da qui o da specific sources. cambia poco perché, appunto, possiamo scegliere eh quali tipi di file ehm inserire o comunque farli eh integrare all'interno della della knowledge base di Gemini.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=540s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(646)">
+      <div class="title">
+        <span class="timestamp">00:10:46</span> REPORTISTICA E TESTING
+      </div>
+      <div class="text">Andiamo a testarlo adesso che abbiamo parlato di di tutto quanto. Andiamo a fare un un breve test. Come vedete io posso cliccare appunto questo test run, mi va direttamente in questa schermata. Cos'è che mi dice? mi dice, "Guarda, stai attento perché appunto eh una volta che clicchi start questo funziona veramente, non non è soltanto una cosa fittizia, ma può appunto mandare messaggi, fare l'update di file, inviare meeting e quindi attenti a quello che fate perché vabbè, in questo caso non stiamo facendo nulla di che, però se doveste fare appunto cose un po' più ehm delicate, ecco, magari prima di testarlo e premere run eh fate un test, diciamo, a parte con delle cose tra virgolette fitti.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=646s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(731)">
+      <div class="title">
+        <span class="timestamp">00:12:11</span> CREEA GEMME E LA GRAFICA
+      </div>
+      <div class="text">funziona. Però niente di diverso da quello che abbiamo visto prima, semplicemente appunto un una gemma, un Gemini specializzato. rosso se io ho creato una gemma all'interno del mio account Google Wordspace, richiamare quella gemma per fare magari un compito specifico e questo vedremo appunto in uno di dei prossimi flussi come. E poi ci sono altre azioni sempre che utilizzano l'AI, quindi posso anche dire, guarda, fammi recap specifico delle email non lette, decidi in base a il contenuto, in base a quello che hai estratto, fammi il summary, fammi il riassunto del contenuto oppure estrai un una info, o un dato particolare da quello che ti sto passando.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=731s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(759)">
+      <div class="title">
+        <span class="timestamp">00:12:39</span> STRUMENTI E FUNZIONI MAGICHE
+      </div>
+      <div class="text">E poi in base anche ai tool che ci sono, quindi disponibili, quindi Gmail, inviami unemail oppure articela, eh, creami una draft, aggiungi appunto delle labeles, robe di questo tipo. Questo che ho aggiunto io, quindi di notificarmi direttamente in chat. Oppure forse anche quello, diciamo, quelli più utili, probabilmente sono quelli relativi a Gmail, sicuramente Google Sheet, il fatto che posso aggiungere o fare l'update delle righe eh in base a appunto ai vari parametri.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=759s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(868)">
+      <div class="title">
+        <span class="timestamp">00:14:28</span> CONFIGURAZIONE STEP E INCONVENIENTI
+      </div>
+      <div class="text">Quindi questo, appunto, giusto per dirvi, si possono inserire ovviamente quanti step vogliamo e la cosa scomoda, secondo me, a differenza di altri strumenti che abbiamo visto, è che io per muoverli eh tra di loro, comunque per spostarli, non posso fare un semplice drag and drop che appunto non funziona, ma devo per forza fare move up, move down, robe di questo tipo.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=868s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1005)">
+      <div class="title">
+        <span class="timestamp">00:16:45</span> PARTENZA TEST E NOTIFICHE
+      </div>
+      <div class="text">Quindi andiamo a cliccare start, vedete, appunto, lui comincia a lavorare e poi si vedranno, come abbiamo visto anche prima nella fase di activity tutte le tutti gli step che farà dall'inizio alla fine. Quindi è partito con il trigger, adesso sta utilizzando Gemini per creare il nostro, diciamo, la nostra newsletter. Quindi, come vedete, già da qua io posso vedere i vari titoli, riassunti, mi dà anche i link. Eh, però anche il fatto di eh avere stile N8N un error workflow, chiamiamolo così, un flusso che tu puoi personalizzare e in base all'errore specifico andrebbe, essendo mai fatto perché potrebbe essere la cosa, diciamo, un po' più utile per renderlo anche eh il più debuggabile possibile.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1005s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1096)">
+      <div class="title">
+        <span class="timestamp">00:18:16</span> AUTOMAZIONE CON INTELLIGENZA ARTIFICIALE
+      </div>
+      <div class="text">in questo caso è il tema dell'intelligenza artificiale. posso appunto utilizzare i vari vari link per andare qua mi dà anche un warning ovviamente per andare a vedere appunto la notizia di di sé per sé, però sicuramente può essere utile nel caso in cui magari vogliamo fare una newsletter automatica ogni settimana, ogni non so, ogni giorno. Io l'o avevo provato a farla ogni giorno, dopo un po', sinceramente mi sono seccato e quindi l'ho fatta settimanalmente, però ovviamente dipende dai casi, dal dal proprio dalle proprie preferenze, però è una cosa abbastanza interessante e come dicevo prima se n'è discusso poco perché ovviamente eh riguardo automazione ci sono tanti altri tool che si potrebbero utilizzare anche per fare le stesse cose, però sicuramente il fatto di ehm averlo così semplice è integrato con tutti i vari strumenti di Google alla fine potrebbe essere una mossa giusta da dalla loro parte.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1096s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1218)">
+      <div class="title">
+        <span class="timestamp">00:20:18</span> UTILIZZI IN BETA E ESPERIMENTI
+      </div>
+      <div class="text">Eh, eccole qua. Perfectto. Ok, ci stanno usando come beta tester. Sì, è vero. [risate] Infatti, in realtà, appunto, ci sono anche altre chicche che sono spuntate adesso, anche mentre facevo questi questi flussi che vi volevo far vedere, giusto perché, appunto, sono ancora in beta, alcuni utenti ce l'hanno, altri no, eh, però ecco, sicuramente ci utilizzano come cavie in quel caso per capire appunto eh quanto la gente lo usa, se è veramente utile per i vari utenti o appunto, quindi per continuare, immagino, gli sviluppi all'interno di questi strumenti oppure No, però sicuramente immagino che potrebbe essere utile a a chiunque abbia un un account, appunto, Wordspace e di Google.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1218s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1346)">
+      <div class="title">
+        <span class="timestamp">00:22:26</span> CONFIGURAZIONE FLUSSO REPORTISTICA
+      </div>
+      <div class="text">In questo caso ovviamente me le sto prendendo tutte perché mi servivano tutte, però posso anche qua più più specifico, dire "Guarda, no, mi serve soltanto la colonna delle email, mettiamo caso" e quindi ti porti avanti soltanto quello. Però di base il trigger, l'evento che attiva questa automazione è proprio quello di cambia qualcosa all'interno del del mio del mio foglio. Quando cambia qualcosa, allora la logica qual è? mi prendo il contenuto del tutto il contenuto del foglio e poi me lo porto avanti all'interno del di tutto il flusso. Andiamo a vedere più nel dettaglio cosa cosa configurare. Ad esempio, qui in questo caso io vi sto dicendo ovviamente sempre di prendere il il foglio stesso e da questo foglio prendermi i valori delle varie colonne che mi interessano. Quindi mi interessa magari lo studente ID, il codice del corso, il nome del corso, lo status e quando è stato eh quando si è scritto lo studente.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1346s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1443)">
+      <div class="title">
+        <span class="timestamp">00:24:03</span> CREAZIONE E ANALISI DATI
+      </div>
+      <div class="text">Ovviamente qua questo non basta perché se noi gli mettiamo soltanto il promptà "Ok, però mi devi passare i dati" e quindi ti darà un report fittizio perché appunto l'importante è sapere che una volta che noi prendiamo ad esempio questo nodo get she content non ce lo portiamo automaticamente avanti, ma dobbiamo sempre essere noi a utilizzare appunto le variabili e a dirgli ok guarda, prenditi e qua appunto lo potete fare direttamente da qui, vedete? Step 2 io posso dire appunto prendimi i eh valori, i matching values di student, student name, insomma le colonne che mi servono per o che serviranno a lui in questo caso per fare l'analisi. Qua ovviamente ho disabilitato i vari web search, workspace perché non voglio che in qualche modo possano sporcare il diciamo il report o comunque l'analisi che deve fare.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1443s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1583)">
+      <div class="title">
+        <span class="timestamp">00:26:23</span> CREAZIONE DI GEMMA DESIGNER
+      </div>
+      <div class="text">diciamo, che ha generato e oltre questo, diciamo, ci sono i vari eh grafici, chiamiamoli così, che ha generato il nostro designer. In questo caso vedete che non sono dei veri e propri grafici, in realtà ehm li ha fatti abbastanza minimal, quindi probabilmente la cosa che manca è proprio questa cosa qui, cioè questa cosa che non è, diciamo, questa immagine non è stata eh aggiunta automaticamente, ma l'ho aggiunta dopo, io ve lo faccio vedere come ho fatto. E quindi la cosa che probabilmente potrebbe essere utile in un'automazione di questo tipo, che è anche abbastanza popolare, richiesta un po' da tutti, è quello di ok, utilizzo e la l'idea mia era proprio questa quando ho creato questo questo designer e l'ho creato appunto su su Gemy su la piattaforma di Gemini normale, era quella ok, mi creo una gemma in modo tale che possa in qualche modo essere specializzata nella creazione di immagini di grafici passandogli appunto i dati.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1583s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1706)">
+      <div class="title">
+        <span class="timestamp">00:28:26</span> STUDI E PROVE CON TEST
+      </div>
+      <div class="text">eh precedentemente. Una volta fatto questo, come vedete, io posso come abbiamo fatto prima, fare il test. Lui mi chiederà di nuovo le stesse cose. Eh, qua ovviamente mi può chiedere, posso anche personalizzare in base a cosa eh avviare il flusso, quindi se deve cambiare appunto secondo un determinato valore oppure no. Io qua sto mettendo secondo qualsiasi valore, però ovviamente lo possiamo personalizzare. Una volta io faccio start, vedete che appunto lui fa ovviamente la stessa cosa e eseguirà tutti i vari step a prescindere dal fatto che io ho cambiato qualcosa, no? Ovviamente in questo caso non ho cambiato niente, ma lui prenderà appunto tutti i vari dati che abbiamo passato all'interno di questo di questo cohet.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1706s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1827)">
+      <div class="title">
+        <span class="timestamp">00:30:27</span> PANORAMICA MULTILINGUA
+      </div>
+      <div class="text">puoi parlare soltanto in inglese, la maggior parte come anche questi qua puoi anche metterli in italiano. Va bene? E adesso lui ci ha formattato, ci ha fatto forse anche delle formattazioni diverse, quindi in realtà probabilmente l'ha fatto appunto c'ha ci ha fatto una pie, però in maniera diversa rispetto a prima. Quindi, se io vado adesso nel mio Wordspace Studio, vedete che io eh trovo questo nuovo report studenti che posso ovviamente aprire e vedere appunto tutte le analisi che ha fatto. Ho detto, "Guarda, ci sono 96 enrollment, 82 iscritti, 8 in attesa, sei cancellati, eccetera eccetera". La cosa che mi interessava era vedere appunto i grafici che aveva fatto, però qua appunto come vi dicevo prima, ok, carino. Qua ha fatto anche una sorta di di stile o comunque di consiglio di stile anche dei colori, insomma. E ne approfitto, appunto, per farvi vedere alla fine quello che ho fatto io, perché ho detto "Ok, però magari se voglio automatizzare anche questa parte qua di creazione del eh dei grafici, a questo punto mi mi prendo Gemini." Qua, in questo caso, quello che consiglio è per ogni grafico eh creare una nuova chat, una nuova sessione, in modo tale da non sporcare troppo il contesto con i dati precedenti. e e ti riguarda creami, ok? cre un grafico eh [sbuffare] con questi dati.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1827s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(1948)">
+      <div class="title">
+        <span class="timestamp">00:32:28</span> ULTIME FASI REPORTISTICA
+      </div>
+      <div class="text">Vabbè, ci ha fatto una sorta di immagini. Quello che faccio è magari prendere, faccio copia e poi lo incollo qui, giusto per avere una sorta di reportistica, chiamiamola così, con eh con i vari grafici. Però questo in realtà non è proprio bellissimo, eh, però ad esempio se io prendo questo, vediamo se mi fa appunto una P chart. In questo caso, come vi dicevo, crea una nuova conversazione. Io metto questo, gli dico crea un grafico, anzi mettiamo una P chart con queste informazioni qua di default ormai che io ho messo appunto come tools nano banana comunque create images, lui mi creerà l'immagine. Vediamo se questa volta ci fa un'immagine un po' più [sbuffare] da data analyst. Eccola qui. Già, già meglio, già meglio.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=1948s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2097)">
+      <div class="title">
+        <span class="timestamp">00:34:57</span> RISOLUZIONE BUG E FLUSSO LAVORO
+      </div>
+      <div class="text">Prego Simone, figurati. Vi faccio vedere, appunto, diciamo, il Esatto, visto anche questo, eh, la terza volta che mi ricapita questo errore, anche se io non ho toccato nulla, però, come vedete, spesso lui mh può dare errori anche un po' a caso e è molto ovviamente questo si tratta di un bug di di questa funzione. Io per adesso sto risolvendo, facendo move up, move down. Comunque m di solito questo funzionava. Esatto. Eh, se clicco un po', smanetto un po' nel flusso, poi si riaggiusta da solo. Però è più una un fatto probabilmente di aggiornamento perché deve prendere appunto i vari file che sono stati referenziati all'interno, ad esempio di gemi, cose cose di questo tipo. Prima di entrare nel flusso vi faccio vedere appunto il diciamo l'idea che c'è dietro. Quindi chiudiamo anche questi report studenti e andiamo direttamente nel form che avevo creato.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2097s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2244)">
+      <div class="title">
+        <span class="timestamp">00:37:24</span> LINK ANNUNCIO E CREAZIONE FORM
+      </div>
+      <div class="text">Quindi se m oltre ai vari template volete soltanto descrivere o avete magari un link di m di un qualsiasi annuncio di lavoro, dite 'Ok, mi serve il form eh fammi il form di questo annuncio che riguarda gli developer eccetera eccetera che ha queste skill, lo vi aiuta, vi dà appunto una bozza di base e poi potete comunque continuare poi direttamente all'interno di Google Form che trovo una cosa abbastanza anche utile e e interessante. Quindi a parte questo, appunto, come vedete io eh l'obiettivo è quello di una volta che prende i vari le varie informazioni del del mio utente eh farle in qualche modo filtrare, farle analizzare da Gemini. E una volta che le analizzate appunto se è in target va avanti, se non in target si ferma lì. Se va in target, poi voglio avere anche un riepilogo all'interno di quest'altro foglio con il nome, il cognome e le info, diciamo, riassunte da Gemini stesso.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2244s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2315)">
+      <div class="title">
+        <span class="timestamp">00:38:35</span> AZIONE GEMINI E DECISIONE
+      </div>
+      <div class="text">Prendo poi come azione Gemini dove gli dico "Ok, guarda, analizza il form e lettera di presentazione", anche se qua in realtà lettera di presentazione non c'è, quindi Cv e basta. Cv, prenditi appunto le risposte del form, prenditi il CV. Questo sempre facendo la eh diciamo la reference con le variable. Qua ovviamente mi posso prendere tutte le varie informazioni che posso prendere dal form dico e determina se il candidato in target fuori target in base al contenuto e poi appunto gli dico eh fammi poi un un'estrazione di tutto quanto in modo eh strutturato con nome, cognome, email, skill, eccetera eccetera eccetera. Anche qua, ovviamente, state attenti a non mettere in questo caso in flussi di questo tipo la web search perché andrebbe ad influire nel magari si mette a cercare anche su internet candidati che che non hanno applicato.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2315s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2436)">
+      <div class="title">
+        <span class="timestamp">00:40:36</span> FLUSSO DECISIONALE E AGGIORNAMENTI
+      </div>
+      <div class="text">dello step 3 è true oppure false. Poi ovviamente io potrei anche continuare con il false, quindi se con il false magari metterlo da qualche altra parte, però poi andrebbe a complicarsi un po' di più il flusso. non è l'obiettivo, appunto, di questa live. Eh, se invece è appunto la decisione è true, quindi è in target, a quel punto mi fai un riassunto di tutte le informazioni più rilevanti e questo riassunto poi lo aggiungo all'interno di quel di quel foglio che vi dicevo prima.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2436s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2514)">
+      <div class="title">
+        <span class="timestamp">00:41:54</span> RAZIONALE STRUTTURA E TEST
+      </div>
+      <div class="text">Se invece voglio, ad esempio, soltanto, diciamo, utilizzare, che poi alla fine questo nodo è proprio fatto apposta per fare il riassunto, quindi forse anche meglio vi direi di utilizzare questo nodo, invece di utilizzare, diciamo, il Gemini generico, eh, perché sicuramente è più affidabile dal punto di vista anche di struttura di di riassunto. Quindi, una fatto una volta fatto questo, riproviamo a fare il nostro test. Facciamo test run. Qua ovviamente gli mettiamo eh le risposte appunto che che è arrivata. La risposta è anonima perché l'ho fatta io ovviamente nel in modalità appunto eh.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2514s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2580)">
+      <div class="title">
+        <span class="timestamp">00:43:00</span> UTILITÀ STRUMENTO E FUTURO AUTOMAZIONE
+      </div>
+      <div class="text">aggiorna tutto quanto. secondo me abbastanza, ma molto utile, soprattutto a livello proprio di HR e e capire, appunto, subito anche con questi strumenti se è una persona ideale oppure no, senza perdere tempo magari a fare un colloquio. Sicuramente potrebbe essere utile da quel punto di vista.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2580s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2684)">
+      <div class="title">
+        <span class="timestamp">00:44:44</span> STUDIO INTEGRAZIONI E FORME DI LAVORO
+      </div>
+      <div class="text">strumenti, perché diciamo che ovviamente Lui ha generato tutto quanto. Come vedete, appunto, lui ha fatto un fatto la decisione e è andato in true perché ha detto, "Guarda, Giuseppe Nappa e ha un degreen computer science, ne sa abbastanza dei rag e agenti Ai, quindi la decisione del dell'F è true". e ti faccio il riassunto, così poi te lo metto all'interno della delle candidature developer. Quindi vado su candidature e come vedete abbiamo fatto anche questa cosa sì abbastanza discutibile, diciamo, si potrebbe formattare meglio, però appunto l'importante è che mi ha messo il candidato, quindi in questo caso il il nostro amico Giuseppe Nap con tutto il riassunto del profilo, eh quindi i suoi contatti, numero di telefono, eh come dicevo prima, appunto, anche ehm Se non sbaglio dovrebbe esserci, però questo non è il link al</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2684s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2778)">
+      <div class="title">
+        <span class="timestamp">00:46:18</span> AGGIUNTA CV E DASHBOARD
+      </div>
+      <div class="text">Ehm, e poi qua volendogi potremmo anche aggiungere il CV in un'altra colonna. Ad esempio, io potrei mettere un CV qua e dire "Ok, mettimi l'URL o mettimi il CV", così direttamente posso vederlo da questo tra l'altro una cosa che vi volevo far vedere, appunto, molto interessante e riprendo quello di prima di prima, questo source per subflow. funzione di questo tipo, dove io posso utilizzare appunto questo canvas e crearmi una dashboard. Eh cosa molto molto interessante, molto utile, perché lo fa anche abbastanza bene e questa si aggiorna ogni volta che viene aggiornato proprio il file. Quando viene inserito un altro record. Questo non è statico, ma si aggiorna. Tra l'altro posso anche aggiungere degli studenti, eh, fare quello che voglio e cancellare, editare, come se fosse veramente una eh una dashboard a tutti gli effetti interattiva. Eh, insomma, rispetto a vedere un Google Sheet, diciamo, classico, come siamo abituati, avrei già una dashboard che viene fatta veramente in boh, ci avrà messo 40 secondi, un minuto e molto molto interessante.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2778s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2881)">
+      <div class="title">
+        <span class="timestamp">00:48:01</span> ANALISI DATI E USO CONSAPEVOLE
+      </div>
+      <div class="text">diciamo che appunto studiarsi magari i nostri sheit su o comunque fare analisi dati, già così, è molto più interessante rispetto a vedere. semplicemente delle delle colonne, delle righe con dei numeri. Va bene? Non so se appunto avete delle altre domande a cui posso a cui potete rispondere se appunto avete già magari utilizzato WWS Studio, lo conoscevate già. Eh, ovviamente tutto quanto quello che avete visto oggi e [schiarire la voce] anche in versione più avanzata lo trovate nel nostro corso di eh di Geni, oltre a quello anche specifico proprio per Google Gemini e se siete interessati a prescindere per tutto quant tutto quanto quello che riguarda il mondo dell'automazione automazione con AI, anche lì appunto abbiamo i vari corsi di cloud, cloud code appunto N8N.com, quindi c'è abbastanza mater materiale su cui lavorare, su cui studiare e diciamo sicuramente può essere molto molto utile nel 2026, ma soprattutto eh iniziando da ora fino in avanti a utilizzare questi strumenti per automatizzare un po' tutte quelle eh quei flussi di lavoro che magari possono rubarci più tempo più che eh più che altro, quindi e magari focalizzarci anche su qualcosa di più interessante.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2881s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+    <div class="chapter" onclick="playAt(2936)">
+      <div class="title">
+        <span class="timestamp">00:48:56</span> CONCLUSIONI E SALUTI FINALI
+      </div>
+      <div class="text">Va bene? Allora, se non ci sono altre domande io vi saluto, vi auguro una buona serata, buon lungo ponte e ci vediamo la prossima volta alla prossima live. Ciao a tutti, buona serata.</div>
+      <a 
+        class="yt-link"
+        href="https://www.youtube.com/watch?v=fDbPjP0iksU&t=2936s"
+        target="_blank"
+        onclick="event.stopPropagation()"
+      >
+        Apri su YouTube
+      </a>
+    </div>
+  
+<script>
+  var player;
+  var playerReady = false;
+  
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '400',
+      width: '100%',
+      videoId: 'fDbPjP0iksU',
+      playerVars: {
+        'playsinline': 1,
+        'origin': window.location.origin
+      },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+  
+  function onPlayerReady(event) {
+    playerReady = true;
+  }
+  
+  function playAt(seconds) {
+    if (playerReady && player && player.seekTo) {
+      player.seekTo(seconds, true);
+      player.playVideo();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
